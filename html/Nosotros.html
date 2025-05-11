@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nosotros - Tras la Sombra</title>
-    
-    
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -13,120 +13,150 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoDdGpH1U0zE2I7z9k5T2uW0nN2K3GpC9N9N9Xb2jc2Q57E"
+      crossorigin="anonymous"
+    />
+
+  <!-- Custom CSS -->
     <link rel="stylesheet" href="../CSS/Styles.css" />
   </head>
-  <body>
+  <body class="bg-dark text-white pb-5">
     
+    <!-- Navbar responsive -->
     <header>
-      <div class="contenido-header">
-        <a href="Index.html" class="logo">
-          <img src="../IMAGENES/Logo.jpg" alt="Logo Tras la Sombra" class="logo" />
-        </a>
-        <nav id="nav">
-          <ul id="links">
-            <li><a href="./Index.html">INICIO</a></li>
-            <li><a href="./Nosotros.html" class="seleccionado">NOSOTROS</a></li>
-            <li><a href="./Servicios.html">SERVICIOS</a></li>
-            <li><a href="./Proyectos.html">PROYECTOS</a></li>
-            <li><a href="./Contacto.html">CONTACTO</a></li>
-          </ul>
-        </nav>
-        <div id="icono-nav">
-          <i class="fa-solid fa-bars"></i>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+          <a href="Index.html" class="navbar-brand">
+            <img src="../IMAGENES/Logo.jpg" alt="Logo Tras la Sombra" class="img-fluid" style="max-height: 60px;" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="./Index.html" class="nav-link text-white">INICIO</a></li>
+              <li class="nav-item"><a href="./Nosotros.html" class="nav-link text-danger">NOSOTROS</a></li>
+              <li class="nav-item"><a href="./Servicios.html" class="nav-link text-white">SERVICIOS</a></li>
+              <li class="nav-item"><a href="./Proyectos.html" class="nav-link text-white">PROYECTOS</a></li>
+              <li class="nav-item"><a href="./Contacto.html" class="nav-link text-white">CONTACTO</a></li>
+            </ul>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.instagram.com/misteriosa.mente.ar/" class="text-white"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="redes">
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.instagram.com/misteriosa.mente.ar/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-      </div>
+      </nav>
     </header>
 
-    
-    <section class="pagina">
-      <div class="presentacion">
-        <h2>Quiénes somos</h2>
-        <p class="descripcion">
-          Somos una compañía de teatro inmersivo e interactivo que transforma casos reales y originales en experiencias teatrales que atrapan. Nuestra pasión es hacer que el público no solo mire, sino que participe, decida y forme parte de el misterio.
+    <!-- Contenido principal -->
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="text-danger">Quiénes somos</h2>
+        <p class="fs-5">
+          Somos una compañía de teatro inmersivo e interactivo que transforma casos reales y originales en experiencias teatrales que atrapan. Nuestra pasión es hacer que el público no solo mire, sino que participe, decida y forme parte del misterio.
         </p>
-        <p class="descripcion">
+        <p class="fs-5">
           Con un equipo de actores, guionistas y creativos dedicados, Tras la Sombra nace para que el espectáculo cobre vida fuera del escenario tradicional.
         </p>
       </div>
 
-      <div class="equipo">
-        <div class="miembro">
-          <img src="../IMAGENES/Mary-foto.jpg" alt="Mary-foto" />
-          <div class="info">
-            <h3>Mary Casal</h3>
-            <p>Directora Creativa. Lidera la conceptualización de cada obra, asegurando que cada historia tenga una atmósfera atrapante y envolvente.</p>
-          </div>
-        </div>
-      
-        <div class="miembro">
-          <img src="../IMAGENES/Agos-foto.jpg" alt="Agos-foto" />
-          <div class="info">
-            <h3>Agostina de la Maza</h3>
-            <p>Miembro del equipo de guionistas. Transforma casos reales u originales en tramas teatrales con tensión, profundidad y participación activa del público.</p>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Tarjetas de equipo -->
+        <div class="col">
+          <div class="card h-100 bg-secondary text-white">
+            <img src="../IMAGENES/Mary-foto.jpg" class="card-img-top img-fluid" alt="Mary Casal" />
+            <div class="card-body">
+              <h5 class="card-title">Mary Casal</h5>
+              <p class="card-text">Directora Creativa. Lidera la conceptualización de cada obra, asegurando que cada historia tenga una atmósfera atrapante y envolvente.</p>
+            </div>
           </div>
         </div>
 
-        <div class="miembro">
-          <img src="../IMAGENES/Taka-foto.jpg" alt="Taka-foto" />
-          <div class="info">
-            <h3>Diego Dominici</h3>
-            <p>Miembro del equipo de guionistas. Transforma casos reales u originales en tramas teatrales con tensión, profundidad y participación activa del público.</p>
+        <div class="col">
+          <div class="card h-100 bg-secondary text-white">
+            <img src="../IMAGENES/Agos-foto.jpg" class="card-img-top img-fluid" alt="Agostina de la Maza" />
+            <div class="card-body">
+              <h5 class="card-title">Agostina de la Maza</h5>
+              <p class="card-text">Guionista. Transforma casos reales u originales en tramas teatrales con tensión, profundidad y participación activa del público.</p>
+            </div>
           </div>
         </div>
 
-        <div class="miembro">
-          <img src="../IMAGENES/Valen-foto.jpg" alt="Valen-foto" />
-          <div class="info">
-            <h3>Valentin Gonzalez</h3>
-            <p>Miembro de nuestro euqipo de redes sociales. Encargados de crear contenido relacionado con nuestros casos y compartir este mismo en nuestras redes sociales para atraer mas publico</p>
+        <div class="col">
+          <div class="card h-100 bg-secondary text-white">
+            <img src="../IMAGENES/Taka-foto.jpg" class="card-img-top img-fluid" alt="Diego Dominici" />
+            <div class="card-body">
+              <h5 class="card-title">Diego Dominici</h5>
+              <p class="card-text">Guionista. Transforma casos reales u originales en tramas teatrales con tensión, profundidad y participación activa del público.</p>
+            </div>
           </div>
         </div>
 
-        <div class="miembro">
-          <img src="../IMAGENES/Dani-foto.jpg" alt="Dani-foto" />
-          <div class="info">
-            <h3>Daniela Descalzo</h3>
-            <p>Miembro de nuestro euqipo de redes sociales. Encargados de crear contenido relacionado con nuestros casos y compartir este mismo en nuestras redes sociales para atraer mas publico</p>
+        <div class="col">
+          <div class="card h-100 bg-secondary text-white">
+            <img src="../IMAGENES/Valen-foto.jpg" class="card-img-top img-fluid" alt="Valentin Gonzalez" />
+            <div class="card-body">
+              <h5 class="card-title">Valentin Gonzalez</h5>
+              <p class="card-text">Equipo de redes sociales. Crea y comparte contenido relacionado con nuestros casos para atraer más público.</p>
+            </div>
           </div>
         </div>
 
-        <div class="miembro">
-          <img src="../IMAGENES/Romi-foto.jpg" alt="Romi-foto" />
-          <div class="info">
-            <h3>Romina Rojo</h3>
-            <p>Miembro de nuestro euqipo de marketing. Encargados de crear contenido relacionado con nuestros casos y compartir este mismo en nuestras redes sociales para atraer mas publico</p>
+        <div class="col">
+          <div class="card h-100 bg-secondary text-white">
+            <img src="../IMAGENES/Dani-foto.jpg" class="card-img-top img-fluid" alt="Daniela Descalzo" />
+            <div class="card-body">
+              <h5 class="card-title">Daniela Descalzo</h5>
+              <p class="card-text">Equipo de redes sociales. Crea y comparte contenido relacionado con nuestros casos para atraer más público.</p>
+            </div>
           </div>
         </div>
 
-        <div class="miembro">
-          <img src="../IMAGENES/Juan-foto.jpg" alt="Juan-foto" />
-          <div class="info">
-            <h3>Juan Otero </h3>
-            <p>Miembro de nuestro euqipo de marketing. Encargados de crear contenido relacionado con nuestros casos y compartir este mismo en nuestras redes sociales para atraer mas publico</p>
+        <div class="col">
+          <div class="card h-100 bg-secondary text-white">
+            <img src="../IMAGENES/Romi-foto.jpg" class="card-img-top img-fluid" alt="Romina Rojo" />
+            <div class="card-body">
+              <h5 class="card-title">Romina Rojo</h5>
+              <p class="card-text">Equipo de marketing. Encargada de la promoción de nuestros espectáculos y estrategias de comunicación.</p>
+            </div>
           </div>
         </div>
 
-        <div class="miembro">
-          <img src="" alt="Tute-foto" />
-          <div class="info">
-            <h3>Matias Hernandez</h3>
-            <p>Miembro de nuestro euqipo de ventas. Encargados de vender nuestros espectáculos y tambien de la busqueda de nuevos potenciales clientes, ademas de mantener contacto con los actuales.</p>
+        <div class="col">
+          <div class="card h-100 bg-secondary text-white">
+            <img src="../IMAGENES/Juan-foto.jpg" class="card-img-top img-fluid" alt="Juan Otero" />
+            <div class="card-body">
+              <h5 class="card-title">Juan Otero</h5>
+              <p class="card-text">Equipo de marketing. Encargado de la promoción de nuestros espectáculos y estrategias de comunicación.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 bg-secondary text-white">
+            <img src="" class="card-img-top img-fluid" alt="Matias Hernandez" />
+            <div class="card-body">
+              <h5 class="card-title">Matias Hernandez</h5>
+              <p class="card-text">Equipo de ventas. Encargado de comercializar espectáculos, buscar nuevos clientes y mantener los actuales.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <a
-      href="https://wa.me/5491123456789"
-      class="whatsapp-float"
-      target="_blank"
-      title="Contactanos por WhatsApp"
-    >
-      <i class="fab fa-whatsapp"></i>
+
+     
+    <a href="https://wa.me/5491123456789" class="btn btn-success position-fixed bottom-0 end-0 m-4 rounded-circle p-3" target="_blank" title="Contactanos por WhatsApp">
+      <i class="fab fa-whatsapp fa-lg"></i>
     </a>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA8FxfNcT0Mq+74XJz8D5g7A7HZsN6kkQOXb2X1vVYjM9rVZB0JZu2TfU7vbZxE" crossorigin="anonymous"></script>
   </body>
 </html>

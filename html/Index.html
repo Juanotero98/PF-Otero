@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tras la Sombra</title>
+
+    <!-- ICONOS Y FAVICON -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -10,86 +13,88 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/Favicon/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/Favicon/android-chrome-512x512.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/Favicon/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../CSS/Styles.css" />
-    <title>Tras la Sombra</title>
+    
   </head>
   <body>
-    <section id="inicio">
-      <div class="contenido">
-        <header>
-          <div class="contenido-header">
-            <a href="Index.html" class="logo">
-              <img
-                src="../IMAGENES/Logo.jpg"
-                alt="Logo tras la Sombra"
-                class="logo"
-              />
-            </a>
-            <nav id="nav" class="">
-              <ul id="links">
-                <li><a href="./Index.html" class="seleccionado">INICIO</a></li>
-                <li><a href="./Nosotros.html">NOSOTROS</a></li>
-                <li><a href="./Servicios.html">SERVICIOS</a></li>
-                <li><a href="./Proyectos.html">PROYECTOS</a></li>
-                <li><a href="./Contacto.html">CONTACTO</a></li>
-              </ul>
-            </nav>
-            <div id="icono-nav">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="redes">
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              <a href="https://www.instagram.com/misteriosa.mente.ar/"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="Index.html">
+          <img src="../IMAGENES/Logo.jpg" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="./Index.html">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="./Nosotros.html">NOSOTROS</a></li>
+            <li class="nav-item"><a class="nav-link" href="./Servicios.html">SERVICIOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="./Proyectos.html">PROYECTOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="./Contacto.html">CONTACTO</a></li>
+          </ul>
+          <div class="d-flex gap-3 ms-lg-3">
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/misteriosa.mente.ar/" class="text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
           </div>
-        </header>
-        <div class="presentacion">
-          <p class="bienvenida">Bienvenidos</p>
-          <h2>
-            Somos <span>Tras la Sombra</span>, Compania de teatro inmersivo e
-            interactivo
-          </h2>
-          <p class="descripcion">
-            “Bienvenidos a Tras la Sombra, donde el misterio cobra vida y la
-            estrategia es clave para sobrevivir. Somos una productora de
-            experiencias inmersivas que desafían la mente y ponen a prueba tu
-            instinto. Desde obras de teatro interactivas basadas en casos reales
-            y originales, hasta juegos de mesa que te sumergen en intrigas
-            llenas de giros inesperados, nuestro objetivo es llevarte más allá
-            de lo evidente. Aquí, cada sombra oculta una historia, cada pista es
-            un enigma, y cada decisión te acerca o aleja de la verdad. La
-            pregunta es… ¿serás capaz de resolver el caso?”
-          </p>
-          <a href="./Proyectos.html">Ir a proyectos</a>
         </div>
       </div>
+    </nav>
+
+    <!-- SECCIÓN INICIO -->
+    <section
+      id="inicio"
+      class="vh-100 d-flex align-items-center justify-content-center text-white text-center"
+      style="background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../IMAGENES/Fondo-2.jpg') center/cover no-repeat;"
+    >
+      <div class="container px-3 mt-5 pt-5">
+        <p class="text-uppercase fw-bold letter-spacing mb-3">Bienvenidos</p>
+        <h2 class="display-5 fw-bold">
+          Somos <span class="text-danger">Tras la Sombra</span>, Compañía de teatro inmersivo e interactivo
+        </h2>
+        <p class="lead mt-4 text-break">
+          “Bienvenidos a Tras la Sombra, donde el misterio cobra vida y la estrategia es clave para sobrevivir. Somos una productora de
+          experiencias inmersivas que desafían la mente y ponen a prueba tu instinto. Desde obras de teatro interactivas basadas en casos reales
+          y originales, hasta juegos de mesa que te sumergen en intrigas llenas de giros inesperados, nuestro objetivo es llevarte más allá
+          de lo evidente. Aquí, cada sombra oculta una historia, cada pista es un enigma, y cada decisión te acerca o aleja de la verdad. La
+          pregunta es… ¿serás capaz de resolver el caso?”
+        </p>
+        <a href="./Proyectos.html" class="btn btn-outline-light btn-lg mt-4">Ir a proyectos</a>
+      </div>
     </section>
+
+    <!-- BOTÓN WHATSAPP -->
     <a
       href="https://wa.me/5491123456789"
-      class="whatsapp-float"
-      target="_blank"
+      class="btn btn-success position-fixed bottom-0 end-0 m-4 rounded-circle p-3 btn-whatsapp"
       title="Contactanos por WhatsApp"
+      target="_blank"
     >
-      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-whatsapp fa-lg"></i>
     </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
