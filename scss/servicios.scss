@@ -1,0 +1,24 @@
+/* SERVICIOS - WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: $color-texto;
+  font-size: 36px;
+  padding: 20px;
+  border-radius: 50%;
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  @include transicion-hover;
+  user-select: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-principal;
+    transform: scale(1.1);
+    outline: none;
+    cursor: pointer;
+  }
+}

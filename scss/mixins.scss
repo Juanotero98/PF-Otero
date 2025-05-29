@@ -1,0 +1,12 @@
+// MIXINS
+@mixin transicion-hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 480px) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 1024px) { @content; }
+  }
+}

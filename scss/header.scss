@@ -1,0 +1,72 @@
+nav {
+  ul {
+    li {
+      a, /* apunta a los enlaces dentro de li > ul > nav */
+      &.nav-link { /* también apunta a enlaces con clase nav-link, si usás Bootstrap */
+        text-decoration: none;
+        color: $color-texto;
+        font-weight: 400;
+        padding: 8px 5px;
+        display: inline-block;
+
+        &:hover,
+        &:focus-visible {
+          color: $color-principal;
+          outline: none;
+        }
+
+        &.fw-bold {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// HEADER
+header {
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  transition: background-color 0.3s ease;
+
+  .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+
+    h1 {
+      text-align: center;
+      color: $color-texto;
+      font-size: 24px;
+      user-select: none;
+    }
+  }
+
+  #icono-nav {
+    color: $color-texto;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    margin-top: 10px;
+    user-select: none;
+  }
+}
+
+.logo {
+  height: 60px !important;
+  width: auto !important;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,49 @@
+// CONTACTO
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 10px;
+
+  input,
+  textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    transition: box-shadow 0.3s ease;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 8px $color-principal;
+    }
+  }
+
+  textarea {
+    resize: none;
+    min-height: 120px;
+  }
+
+  button {
+    padding: 15px;
+    background-color: $color-principal;
+    color: $color-texto;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+
+    &:hover,
+    &:focus-visible {
+      background-color: darken($color-principal, 15%);
+      outline: none;
+      box-shadow: 0 0 10px darken($color-principal, 30%);
+    }
+  }
+}
