@@ -11,6 +11,10 @@ html {
   font-family: "Playfair Display", serif;
 }
 
+main {
+  margin-top: 90px; 
+}
+
 body, #inicio {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../IMAGENES/Fondo-2.jpg");
   background-size: cover;
@@ -50,7 +54,7 @@ header .contenido-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0 20px;
   flex-wrap: wrap;
 }
 header .contenido-header h1 {
@@ -329,6 +333,7 @@ header #icono-nav {
     font-size: 15px;
   }
 }
+
 
 
 /*# sourceMappingURL=Estilos.css.map */
