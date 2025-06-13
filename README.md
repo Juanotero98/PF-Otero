@@ -2,6 +2,6 @@
 
 Sitio web de la compañía teatral **Tras la Sombra**.
 
-🔗 [Ver la página publicada](https://tu-usuario.github.io/nombre-del-repositorio/)
+🔗 https://juanotero98.github.io/PF-Otero/
 
 Este sitio fue construido con HTML, CSS personalizado y Bootstrap.
