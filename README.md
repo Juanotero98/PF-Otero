@@ -14,6 +14,7 @@ SCSS (con variables y estructura modular)
 Bootstrap 5
 
 Git & GitHub para control de versiones
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🖥️ Estructura del sitio
 El sitio web está compuesto por las siguientes páginas:
@@ -27,6 +28,7 @@ pages/servicios.html → Información sobre nuestros servicios y producciones
 pages/proyectos.html → Galería y detalles de obras teatrales
 
 pages/contacto.html → Formulario de contacto y redes sociales
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📌 Características destacadas
 
@@ -39,6 +41,7 @@ Efectos visuales y hover en secciones y proyectos
 Galería interactiva de obras teatrales
 
 Integración con redes sociales para acercar la comunidad
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📬 Contacto de la Compañía
 📧 contacto@traslasombra.com
